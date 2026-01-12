@@ -1,5 +1,5 @@
 ---
-
+const pageTitle = "About Me";
 ---
 
 <html lang="en">
@@ -9,11 +9,13 @@
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>Astro</title>
+    <title>{pageTitle}</title>
   </head>
   <body>
     <a href="/">Home</a>
     <a href="/blog/">Blog</a>
-    <h1>Astro My world</h1>
+    <h1>About Me</h1>
+     <h1>{pageTitle}</h1>
     <h3>Hello This is My about Page</h3>
     <p>
       I am working through Astro's introductory tutorial. This is the second
