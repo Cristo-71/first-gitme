@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "../../../../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "emailer"
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"type": "node-terminal",
+				"name": "JavaScript Debug Terminal",
+				"request": "launch"
+			}
+		]
+	}
+}

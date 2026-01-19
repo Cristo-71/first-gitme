@@ -1,8 +1,27 @@
 ---
-import BaseLayout from './layouts/BaseLayout.astro';
+import BaseLayout from "./layouts/BaseLayout.astro";
 const pageTitle = "Home Page";
+
+const person1 = [
+  { name: "Nischal", age: "25" },
+  { name: "CRisto", age: "26" },
+  { name: "Nijh ", age: "27" },
+];
 ---
+
 <BaseLayout pageTitle={pageTitle}>
   <h2>Home page slot</h2>
   <p>Hello Hello Mic is Testinguuu</p>
+
+  <h2>Team Members</h2>
+
+  <div>
+    {person1.map((item)=>{
+      return(
+        <p>my name is {item.name}</p>
+        <p>my age is {item.age}</p>
+      )
+    })}
+  </div>
 </BaseLayout>
+📄
